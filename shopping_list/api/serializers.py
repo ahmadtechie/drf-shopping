@@ -7,25 +7,18 @@ class ShoppingItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = ShoppingItem
         fields = ["id", "name", "purchased"]
-        read_only_fields = ('id',)
+        read_only_fields = ("id",)
 
     def create(self, validated_data, **kwargs):
-        validated_data['shopping_list_id'] = self.context['request'].parser_context['kwargs']['pk']
+        validated_data["shopping_list_id"] = self.context["request"].parser_context[
+            "kwargs"
+        ]["pk"]
         return super(ShoppingItemSerializer, self).create(validated_data)
 
 
 class ShoppingListSerializer(serializers.ModelSerializer):
-    shopping_items = ShoppingItemSerializer(many=True)
+    shopping_items = ShoppingItemSerializer(many=True, read_only=True)
 
     class Meta:
         model = ShoppingList
-        fields = ['id', 'name', 'shopping_items']
-
-    def create(self, validated_data):
-        items_data = validated_data.pop('shopping_items')
-        shopping_list = ShoppingList.objects.create(**validated_data)
-
-        for item_data in items_data:
-            ShoppingItem.objects.create(shopping_list=shopping_list, **item_data)
-
-        return shopping_list
+        fields = ["id", "name", "shopping_items"]

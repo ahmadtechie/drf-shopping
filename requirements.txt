@@ -1,6 +1,16 @@
 asgiref==3.8.1
+atomicwrites==1.4.1
+attrs==23.2.0
+colorama==0.4.6
 Django==4.0.5
 djangorestframework==3.13.1
+iniconfig==2.0.0
+packaging==24.0
+pluggy==1.4.0
+py==1.11.0
+pytest==7.1.2
+pytest-django==4.5.2
 pytz==2024.1
 sqlparse==0.4.4
+tomli==2.0.1
 tzdata==2024.1

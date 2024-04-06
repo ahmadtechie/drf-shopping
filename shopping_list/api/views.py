@@ -1,7 +1,8 @@
 from rest_framework import generics
 
-from shopping_list.api.serializers import ShoppingListSerializer, ShoppingItemSerializer
-from shopping_list.models import ShoppingList, ShoppingItem
+from shopping_list.api.serializers import (ShoppingItemSerializer,
+                                           ShoppingListSerializer)
+from shopping_list.models import ShoppingItem, ShoppingList
 
 
 class ListAddShoppingList(generics.ListCreateAPIView):
