@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from shopping_list.api.views import (AddShoppingItem, ListAddShoppingList,
                                      ShoppingItemDetail, ShoppingListDetail)
@@ -22,4 +22,5 @@ urlpatterns = [
         ShoppingItemDetail.as_view(),
         name="shopping-item-detail",
     ),
+    path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
 ]
