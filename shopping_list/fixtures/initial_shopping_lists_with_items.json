@@ -1,0 +1,68 @@
+[
+  {
+    "model": "shopping_list.shoppinglist",
+    "pk": "34a81b0e-fd5b-4d9d-8a28-a5382776518e",
+    "fields": {
+      "name": "Cosmetics"
+    }
+  },
+  {
+    "model": "shopping_list.shoppinglist",
+    "pk": "480cee8c-868d-443b-a5a3-18f4bb8fa34c",
+    "fields": {
+      "name": "Grocery"
+    }
+  },
+  {
+    "model": "shopping_list.shoppinglist",
+    "pk": "531f4465-5806-4edd-9045-268f348f5df0",
+    "fields": {
+      "name": "Gadgets"
+    }
+  },
+  {
+    "model": "shopping_list.shoppingitem",
+    "pk": "34c7e94a-814e-43d1-bcb9-7e5f94d12edc",
+    "fields": {
+      "name": "Milk",
+      "purchased": false,
+      "shopping_list": "480cee8c-868d-443b-a5a3-18f4bb8fa34c"
+    }
+  },
+  {
+    "model": "shopping_list.shoppingitem",
+    "pk": "5d494b02-d30d-4d99-b2df-03ab6f2f477d",
+    "fields": {
+      "name": "Sugar",
+      "purchased": false,
+      "shopping_list": "480cee8c-868d-443b-a5a3-18f4bb8fa34c"
+    }
+  },
+  {
+    "model": "shopping_list.shoppingitem",
+    "pk": "c7e25f2e-8d67-4c86-b7de-9685e423be80",
+    "fields": {
+      "name": "Headphone",
+      "purchased": false,
+      "shopping_list": "531f4465-5806-4edd-9045-268f348f5df0"
+    }
+  },
+  {
+    "model": "shopping_list.shoppingitem",
+    "pk": "de14ac8f-3727-40f2-baee-3f82a518140c",
+    "fields": {
+      "name": "Apple",
+      "purchased": false,
+      "shopping_list": "480cee8c-868d-443b-a5a3-18f4bb8fa34c"
+    }
+  },
+  {
+    "model": "shopping_list.shoppingitem",
+    "pk": "fd631822-a9b5-4557-bbcf-1facea6ff7c4",
+    "fields": {
+      "name": "Mouse",
+      "purchased": false,
+      "shopping_list": "531f4465-5806-4edd-9045-268f348f5df0"
+    }
+  }
+]
